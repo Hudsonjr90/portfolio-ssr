@@ -1,0 +1,419 @@
+{
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "education": "Academics",
+    "testimonials": "Testimonials",
+    "experiences": "Experiences",
+    "skills": "Skills",
+    "portfolio": "Projects",
+    "contact": "Contact"
+  },
+
+  "home": {
+    "loading": "Loading...",
+    "function1": "Computer Scientist",
+    "function2": "Development Specialist",
+    "function3": "Software Engineer",
+    "function4": "UI/UX Designer",
+    "resume": "Resume",
+    "download": "Download",
+    "close": "Close"
+  },
+
+  "name": {
+    "br": "Brazil | PT",
+    "us": "United States | EN",
+    "fr": "France | FR",
+    "it": "Italy | IT",
+    "es": "Spain | ES"
+  },
+
+  "navbar": {
+    "effect": "Particles Effect",
+    "sound": "Sound Effect",
+    "theme": "Theme",
+    "language": "Languages"
+  },
+
+  "about": {
+    "title": " Who is ",
+    "text": "- Passionate and dedicated Web Developer, I have accumulated solid experience over 10 years, complemented by interpersonal skills that I consider fundamental to the programming universe. I specialize in web technologies, possessing comprehensive knowledge that extends across various tools and languages. My passion for constant learning and my commitment to continuously evolving drive me to apply my vast experience in developing innovative and impactful web solutions. My communicative nature makes me always ready to play a vital role in innovative proposals. Let's build something incredible together!",
+    "showMore": "More",
+    "showLess": "Less"
+  },
+
+  "education": {
+    "title": " My",
+    "text": " Academics",
+    "cards": [
+      {
+        "text": "Bootcamp Banco Pan (Frontend Development with Angular)",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Master's degree within the Computer Science graduate program",
+        "title": "Harvard University"
+      },
+      {
+        "text": "Postgraduate in Software Engineering",
+        "title": "Faculdade Única de MG"
+      },
+      {
+        "text": "Managerial Processes",
+        "title": "Estácio de Sá University"
+      },
+      {
+        "text": "Working with Components in React",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Component Architecture and Complexity Management in Frontend",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Essential Programming Logic",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Javascript ES6 Essentials",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Advanced Techniques in Angular 8",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Adobe Professional - AEM (Front-end Developer)",
+        "title": "Adobe Professional"
+      },
+      {
+        "text": "Adobe Professional - AEM (Sites Business Practitioner)",
+        "title": "Adobe Professional"
+      },
+      {
+        "text": "VueJs Brazil - Vue.js Course (Basic to Advanced)",
+        "title": "VueJs Brazil"
+      },
+      {
+        "text": "Directives and Component Properties in Vue.js",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Components, Methods, and Lifecycle with Vue.js",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Javascript and Typescript Course from Basic to Advanced",
+        "title": "Udemy"
+      },
+      {
+        "text": "Automated Testing with Cypress",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Financial Management Course",
+        "title": "Sebrae"
+      },
+      {
+        "text": "Customer Success Course (How to Win and Retain Clients)",
+        "title": "Sebrae"
+      },
+      {
+        "text": "Digital Marketing for Entrepreneurs",
+        "title": "Sebrae"
+      },
+      {
+        "text": "Financial Strategy for Growth",
+        "title": "Sebrae"
+      },
+      {
+        "text": "Sebrae - Strategic Planning for Entrepreneurs",
+        "title": "Sebrae"
+      },
+      {
+        "text": "Digital Security Course",
+        "title": "FGV"
+      },
+      {
+        "text": "Administrative Assistant",
+        "title": "Cursos 24h"
+      },
+      {
+        "text": "Business Financial Education Course",
+        "title": "Sebrae"
+      }
+    ]
+  },
+
+  "testimonials": {
+    "title": " Some",
+    "text": " Testimonials",
+    "clickToFlip": "Click to flip",
+    "subtitle1": "I had the pleasure of working with Hudson Kennedy at DT3 (Bender M), where he demonstrated exceptional skills and exemplary dedication. His ability to solve problems analytically and creatively, combined with his excellent communication skills, made him a valuable member of the team. Hudson always anticipated the team's needs, proposing improvements and innovative solutions that resulted in significant success in our Sprints. I highly recommend him for any future position, as I know he will continue to achieve great success in his career.",
+    "subtitle2": "Excellent work partner and a great person! His sense of responsibility stands out among others, never leaving anything behind or without a solution. I learned a lot from Hudson and will carry these lessons with me for life.",
+    "subtitle3": "Hudson is an excellent work partner, always seeking improvement and developing new skills. He is always willing to help. Dedicated and committed.",
+    "subtitle4": "Hudson is a super dedicated professional and committed to delivery, always demonstrating proactivity, ease, as well as initiative and the ability to solve problems objectively and with technical knowledge.",
+    "subtitle5": "Great professional, always seeking to learn, improve, and master new subjects. Helping the team solve problems.",
+    "subtitle6": "For me, Hudson was an excellent instructor. He taught me to handle a platform that is not at all in my field. Exemplary professional and of great capacity. He has everything to take off in his career as a Developer.",
+    "subtitle7": "I worked with Hudson at Vilt. Even though it was a short period, I had the opportunity to get to know this wonderful person, very animated and collaborative. We participated in training and some challenges together, during this time, as a more experienced person, he showed himself to be a good guide and an excellent motivator for everyone around him and especially for the younger people. Always willing to help, he will be a great ally in any team.",
+    "subtitle8": "I had the opportunity to work with Hudson. It was a very interesting experience, as he is a very dedicated and competent professional in the frontend. A pleasant surprise and highly recommended. Success Hudson!",
+    "subtitle9": "Hudson is a complete professional, always proactive and willing to help, but during the time we worked together, he really stood out for his skill in frontend development and knowledge of UX/UI, always very detail-oriented. He became a reference for me, I am sure he will contribute a lot to the team he joins!",
+    "subtitle10": "Working with Hudson was an excellent experience. His understanding of FrontEnd is evident in every implementation and support to the team. He is proactive, creative, and always seeks innovative and elegant solutions.",
+    "subtitle11": "I had the pleasure of having Hudson on my team. A focused and creative developer, always seeking solutions to the challenges we encounter in the project. Proactive and available to help teammates, aiming for the best in delivering objectives!",
+    "subtitle12": "A great professional and a deep connoisseur of the front-end, not limited to using frameworks to make the 'magic' happen. Highly recommended!",
+    "subtitle13": "I had the pleasure of working with colleague Hudson Kennedy in the development team at Cast, on the MG-Florestas project, and I can attest to his exceptional skills and dedication. Hudson is a talented and passionate front-end developer, always demonstrating a deep understanding of the latest technologies and best practices. During our time together at Cast, he played a fundamental role in the success of the project. What impressed me most about Hudson is his ability to tackle complex challenges with creativity and efficiency. His attention to detail and commitment to delivering high-quality products always set him apart. In addition to his impressive technical skills, Hudson was an incredible team member. His clear communication and willingness to collaborate made the work environment more productive and enjoyable. I recommend Hudson without reservation and am confident that he will continue to have a positive impact wherever he goes. If you are looking for a talented and committed front-end developer, Hudson Kennedy is the right choice. Feel free to contact me if you need additional information. Sincerely, Gei Batista.",
+    "subtitle14": "Hudson was one of the candidates I had the pleasure of meeting. A very educated person, with an incredible life story and led our conversation in a very relaxed manner, always explaining with great richness of detail his experiences. An excellent profile to be evaluated.",
+    "subtitle15": "Hudson is a perfect professional, committed to what he does, always completing his projects with excellence.",
+    "subtitle16": "Exemplary professional! Very dedicated, resolute, and proactive. And with excellent interpersonal skills. Highly recommended!",
+    "subtitle17": "Working with Hudson is always an incredible experience. He is the kind of professional who not only delivers results but also transforms the environment around him. His responsibility and commitment are admirable, and he always tackles challenges with creativity and an innovative perspective, always seeking the best solution for each problem. But what truly sets Hudson apart is not just his technical competence, but the way he connects with people. His good humor makes any day lighter, and his genuine willingness to help makes everyone around him feel supported. He truly cares about the well-being of the team, creating bonds that go beyond the professional environment. If you are looking for a talented, creative developer who truly makes a difference in a team, Hudson is undoubtedly the right person. Any company would be lucky to have him!",
+    "subtitle18": "I'm pleased to say that I've worked with Hudson on the same project. He contributes significantly to a healthy and light work environment. From a technical standpoint, he's always seeking to go beyond the basics, which greatly enriches the work of the entire team."
+  },
+
+  "experiences": {
+    "title": " My",
+    "text": " Experiences",
+    "subtitle1": "Freelancer/Personal Projects",
+    "subtitle2": "E-commerce Analyst / Front-end Developer",
+    "subtitle3": "Fullstack Technical Consultant",
+    "subtitle4": "Frontend Engineer",
+    "subtitle5": "Fullstack Developer",
+    "subtitle6": "Front-End Developer",
+    "description1": "I took an industrial IT course at ETERJ and worked as a freelancer using AngularJs, VB.net, HTML, Javascript, Jquery, Bootstrap, Sass.",
+    "description2": "Issued invoices, migrated a WordPress website to React with NodeJs using Redux, Router, PropTypes, emailjs/browser, Swiper, SweetAlert, etc... optimized image loading and was responsible for integrating the Bling ERP and marketplaces.",
+    "description3": "Fullstack consultancy using Java/NodeJs for the backend, Angular/React for the frontend, and Adobe Experience Manager (AEM) for projects with Porto, CVC, among others.",
+    "description4": "Worked as a contractor, creating architecture and optimizing pages and image loading using Vue3 on the frontend, PHP and Laravel on the backend, and Docker and Webpack to build application containers, with layouts and styles using Sass/Scss, etc...",
+    "description5": "Direct involvement in directives and code maintenance/refactoring using Java/Spring Boot, NodeJs/Express for the backend, PostgreSQL, and Typescript with Angular/React on the frontend.",
+    "description6": "Worked as a contractor, handling project architecture, updating Angular from version 14 to 15, adjusting dependencies, fixing syntax errors, layouts and styles with Sass/Scss, etc...",
+    "description7": "Worked as a contractor using NestJs and gRPC protocol on the backend with Prisma for PostgreSQL database modeling, VueJs with Quasar on the frontend, Typescript, and performed testing with Cypress, refactoring, and creating components and APIs.",
+    "description8": "Worked as a contractor, creating and maintaining layouts and interfaces with React, Styled-Components, and Tailwind CSS, unit testing with Cypress and Jest, and optimizing pages and components.",
+    "description9": "Site Creation with Shopify, JQuery for external responses and integration treatments such as Post Office, Payment Gateway, ERP Bling and etc.",
+    "date1": "February 2012 - December 2016",
+    "date2": "February 2019 - June 2021",
+    "date3": "July 2021 - August 2021",
+    "date4": "January 2022 - April 2022",
+    "date5": "April 2022 - August 2022",
+    "date6": "August 2022 - October 2023",
+    "date7": "November 2023 - January 2024",
+    "date8": "April 2024 - May 2025",
+    "date9": "October 2024 - present"
+  },
+
+  "skills": {
+    "title": " My",
+    "text": " Skills",
+    "search": "Search...",
+    "noResults": "No skills found",
+    "cloudWord": "Word Cloud",
+    "searchable": "Search and Filter",
+    "chart": "Dashboard",
+    "expert": "Expert",
+    "advanced": "Advanced",
+    "intermediate": "Intermediate",
+    "basic": "Basic",
+    "dashboardTitle": "Skills Dashboard",
+    "dashboardSubtitle": "{{count}} skills of proficiency",
+    "proficiency": "Proficiency",
+    "category": "Category",
+    "pieView": "Top Skills Distribution",
+    "rankingView": "Complete Skills Ranking",
+    "mySkills": "My Skills",
+    "proficiencyLevel": "Proficiency",
+    "averageLevel": "Average Level",
+    "totalSkills": "Total Skills",
+    "clickToViewDetails": "Click to view details",
+    "skillsLabel": "skills"
+  },
+
+  "projects": {
+    "title": " Main",
+    "text": " Projects",
+    "subtitle": "Used Technologies",
+    "clickToFlip": "Click to flip",
+    "inDevelopment": "In development",
+    "data": [
+      {
+        "description": "Simple website, following object-oriented Course guidance on Udemy."
+      },
+      {
+        "description": "Pokedex using API to query and list Pokémon."
+      },
+      {
+        "description": "Game created in React and Typescript, to practice and exercise a little more in the language."
+      },
+      {
+        "description": "A historical homage and a precise recreation of the original Pac-Man arcade game."
+      },
+      {
+        "description": "App created with HTML, CSS, and JavaScript, consuming the WeatherAPI, to display information for each city."
+      },
+      {
+        "description": "Analog clock and digital clock, made with TypeScript and Styled-Components"
+      },
+      {
+        "description": "A credit card form, built with vuejs and fully responsive."
+      },
+      {
+        "description": "Swiss Canton Holiday Tracker"
+      },
+      {
+        "description": "Animated login screen, made for practice"
+      },
+      {
+        "description": "Global Currency Converter, made in Udemy course"
+      },
+      {
+        "description": "A small web app to speed up the draw of teams in football"
+      },
+      {
+        "description": "Website of a task organizer (to-do list)"
+      },
+      {
+        "description": "Simple BMI calculator for body mass calculation"
+      },
+      {
+        "description": "Simple Landing Page, created through a technical test"
+      },
+      {
+        "description": "A project to search for your favorite Pokémon and learn about the history of these little creatures' world"
+      },
+       {
+        "description": "Real-time polling system"
+      },
+       {
+        "description": "A real-time news application using NewsAPI."
+      },
+      {
+        "description": "A site for a barbershop, with online booking."
+      }
+    ]
+  },
+
+  "footer": {
+    "title": "Contact"
+  },
+
+  "tour": {
+    "next": "Next",
+    "previous": "Previous",
+    "done": "Done",
+    "close": "Close tour",
+    "progress": "{{current}} of {{total}}",
+    "start": "Tour",
+    "navbar": {
+      "title": "Main Navigation",
+      "description": "Use this menu to navigate between different sections of my portfolio. Each section shows different aspects of my career."
+    },
+    "theme": {
+      "title": "Theme Toggle",
+      "description": "Switch between light and dark themes for a personalized visual experience."
+    },
+    "language": {
+      "title": "Language Selector",
+      "description": "Choose your preferred language. The portfolio is available in 5 different languages."
+    },
+    "sound": {
+      "title": "Audio Control",
+      "description": "Enable or disable sound effects while navigating through the portfolio."
+    },
+    "particles": {
+      "title": "Particle Effects",
+      "description": "Enable or disable animated particle effects in the background to enhance the visual experience."
+    },
+    "hero": {
+      "title": "Hero Section",
+      "description": "This is my main introduction. Here you'll find my name and a brief description of what I do."
+    },
+    "typewriter": {
+      "title": "Text Animation",
+      "description": "This animated text shows my different areas of specialization in development."
+    },
+    "resume": {
+      "title": "Resume Button",
+      "description": "Click here to view or download my complete resume in PDF format."
+    },
+    "about": {
+      "title": "About Me",
+      "description": "In this section you'll learn about my story, experience and passion for development."
+    },
+    "skillsSearch": {
+      "title": "Skills Search",
+      "description": "Use this search bar to find specific skills in my competency set."
+    },
+    "skillsChart": {
+      "title": "Skills Chart",
+      "description": "This chart shows my proficiency level in different technologies and tools."
+    },
+    "wordCloud": {
+      "title": "Word Cloud",
+      "description": "A visual representation of my main technologies, where size indicates the level of expertise."
+    },
+    "portfolioGrid": {
+      "title": "Project Grid",
+      "description": "Here are my main projects. Each card shows a different project with its technologies."
+    },
+    "portfolioCard": {
+      "title": "Project Card",
+      "description": "Click on the card to flip it and see more details, technologies used and project links."
+    },
+    "portfolioPagination": {
+      "title": "Pagination",
+      "description": "Use these buttons to navigate between different project pages."
+    },
+    "timeline": {
+      "title": "Timeline",
+      "description": "This timeline shows my professional journey with all the experiences and positions I've held."
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "description": "Here you'll find feedback from colleagues and clients about my work and professional performance."
+    },
+    "education": {
+      "title": "Academic Education",
+      "description": "My educational journey, including courses, certifications and training that contributed to my development."
+    },
+    "contactForm": {
+      "title": "Contact Form",
+      "description": "Use this form to get in touch with me. All fields are required to ensure I can respond appropriately."
+    },
+    "footer": {
+      "title": "Social Networks",
+      "description": "Get in touch with me through my social networks and communication channels."
+    }
+  },
+
+  "seo": {
+    "home": {
+      "description": "Hudson Kennedy - Full Stack Developer specialized in React, TypeScript, Vue.js and modern technologies. 10+ years of web development experience.",
+      "keywords": "Hudson Kennedy, Full Stack Developer, React, TypeScript, Vue.js, JavaScript, Web Developer, Frontend, Backend, Portfolio"
+    },
+    "about": {
+      "description": "Meet Hudson Kennedy - Computer Scientist and Full Stack Developer passionate about creating innovative and impactful web solutions.",
+      "keywords": "Hudson Kennedy, About, Computer Scientist, Developer, Biography, Professional Profile, Experience"
+    },
+    "skills": {
+      "description": "Explore Hudson Kennedy's technical skills in web development: React, TypeScript, Vue.js, Node.js, Python and much more.",
+      "keywords": "Skills, React, TypeScript, Vue.js, Node.js, Python, JavaScript, CSS, HTML, Technologies"
+    },
+    "portfolio": {
+      "description": "Check out projects developed by Hudson Kennedy: modern web applications using React, Vue.js, TypeScript and other technologies.",
+      "keywords": "Portfolio, Projects, React, Vue.js, TypeScript, Web Applications, Development, GitHub, Deploy"
+    },
+    "education": {
+      "description": "Hudson Kennedy's academic background and certifications: Harvard Master's degree, development specializations and various technical certifications.",
+      "keywords": "Education, Harvard, Certifications, Courses, Specialization, Development, Technology"
+    },
+    "experiences": {
+      "description": "Hudson Kennedy's professional experience: 10+ years working as a developer in companies and freelance projects.",
+      "keywords": "Experience, Work, Career, Developer, Freelancer, Projects, Companies, Professional"
+    },
+    "testimonials": {
+      "description": "Testimonials and recommendations from colleagues and clients about Hudson Kennedy's work as a developer.",
+      "keywords": "Testimonials, Recommendations, Feedback, Clients, Colleagues, Work, Professional, Quality"
+    },
+    "contact": {
+      "description": "Contact Hudson Kennedy for web development projects, consulting or professional opportunities.",
+      "keywords": "Contact, Email, WhatsApp, LinkedIn, GitHub, Project, Consulting, Work, Opportunity"
+    }
+  }
+}

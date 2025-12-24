@@ -1,0 +1,384 @@
+{
+  "menu": {
+    "home": "Pagina iniziale",
+    "about": "Chi Sono",
+    "education": "Accademica",
+    "testimonials": "Deposizioni",
+    "experiences": "Esperienze",
+    "skills": "Competenze",
+    "portfolio": "Portfolio",
+    "contact": "Contatti"
+  },
+
+  "home": {
+    "loading": "Caricamento...",
+    "function1": "Scienziato informatico",
+    "function2": "Specialista dello sviluppo",
+    "function3": "Ingegnere del software",
+    "function4": "Progettista UI/UX",
+    "resume": "Curriculum",
+    "download": "Caricare",
+    "close": "Chiudere"
+  },
+
+  "name": {
+    "br": "Brasile | PT",
+    "us": "Stati Uniti | EN",
+    "fr": "Francia | FR",
+    "it": "Italia | IT",
+    "es": "Spagna | ES"
+  },
+
+  "navbar": {
+    "effect": "Effetto Particelle",
+    "sound": "Effetto Sonoro",
+    "theme": "Tema",
+    "language": "Lingue"
+  },
+
+  "about": {
+    "title": " Chi è ",
+    "text": "- Sviluppatore web appassionato e dedicato, ho accumulato una solida esperienza in 10 anni, completata da competenze interpersonali che considero fondamentali nell'universo della programmazione. Mi sono specializzato nelle tecnologie web, possedendo una conoscenza approfondita che si estende su diversi strumenti e linguaggi. La mia passione per l'apprendimento continuo e il mio impegno a evolvere costantemente mi spingono ad applicare la mia vasta esperienza nello sviluppo di soluzioni web innovative e impattanti. La mia natura comunicativa mi rende sempre pronto a svolgere un ruolo vitale in proposte innovative. Costruiamo qualcosa di incredibile insieme!",
+    "showMore": "Vedi di più",
+    "showLess": "Vedi di meno"
+  },
+
+  "education": {
+    "title": " La Mia",
+    "text": " Educazione Accademica",
+    "cards": [
+      {
+        "text": "Bootcamp Banco Pan (Sviluppo Frontend con Angular)",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Master all'interno del programma di laurea in Informatica",
+        "title": "Università di Harvard"
+      },
+      {
+        "text": "Post-laurea in Ingegneria del Software",
+        "title": "Faculdade Única de MG"
+      },
+      {
+        "text": "Processi Manageriali",
+        "title": "Università Estácio de Sá"
+      },
+      {
+        "text": "Lavorare con Componenti in React",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Architettura dei Componenti e Gestione della Complessità nel Frontend",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Logica di Programmazione Essenziale",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Javascript ES6 Essenziale",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Tecniche Avanzate in Angular 8",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Adobe Professional - AEM (Sviluppatore Frontend)",
+        "title": "Adobe Professional"
+      },
+      {
+        "text": "Adobe Professional - AEM (Sites Business Practitioner)",
+        "title": "Adobe Professional"
+      },
+      {
+        "text": "VueJs Italia - Corso Vue.js (Base ad Avanzato)",
+        "title": "VueJs Italia"
+      },
+      {
+        "text": "Direttive e Proprietà dei Componenti in Vue.js",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Componenti, Metodi e Ciclo di Vita con Vue.js",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Corso Javascript e Typescript dal Base all'Avanzato",
+        "title": "Udemy"
+      },
+      {
+        "text": "Test Automatizzati con Cypress",
+        "title": "Digital Innovation"
+      },
+      {
+        "text": "Corso di Gestione Finanziaria",
+        "title": "Sebrae"
+      },
+      {
+        "text": "Corso Customer Success (Come Conquistare e Mantenere Clienti)",
+        "title": "Sebrae"
+      },
+      {
+        "text": "Marketing Digitale per Imprenditori",
+        "title": "Sebrae"
+      },
+      {
+        "text": "Strategia Finanziaria per la Crescita",
+        "title": "Sebrae"
+      },
+      {
+        "text": "Sebrae - Pianificazione Strategica per Imprenditori",
+        "title": "Sebrae"
+      },
+      {
+        "text": "Corso di Sicurezza Digitale",
+        "title": "FGV"
+      },
+      {
+        "text": "Assistente Amministrativo",
+        "title": "Corsi 24h"
+      },
+      {
+        "text": "Corso di Educazione Finanziaria Aziendale",
+        "title": "Sebrae"
+      }
+    ]
+  },
+
+  "testimonials": {
+    "title": " Alcune",
+    "text": " Testimonianze",
+    "clickToFlip": "Clicca per girare",
+    "subtitle1": "Ho avuto il piacere di lavorare con Hudson Kennedy presso DT3 (Bender M), dove ha dimostrato eccezionali competenze e una dedizione esemplare. La sua capacità di risolvere problemi in modo analitico e creativo, unita alle sue eccellenti doti comunicative, lo hanno reso un membro prezioso del team. Hudson ha sempre anticipato le esigenze del team, proponendo miglioramenti e soluzioni innovative che hanno portato a un grande successo nelle nostre Sprints. Lo consiglio vivamente per qualsiasi posizione futura, poiché sono sicuro che continuerà a raggiungere grandi successi nella sua carriera.",
+    "subtitle2": "Eccellente compagno di lavoro e una grande persona! Il suo senso di responsabilità spicca tra gli altri, non lascia mai niente indietro o senza soluzione. Ho imparato molto da Hudson e porterò con me queste lezioni per tutta la vita.",
+    "subtitle3": "Hudson è un eccellente compagno di lavoro, sempre alla ricerca di miglioramenti e dello sviluppo di nuove competenze. È sempre disposto ad aiutare. Dedicato e impegnato.",
+    "subtitle4": "Hudson è un professionista super dedicato e impegnato nella consegna, dimostrando sempre proattività, facilità, oltre all'iniziativa e alla capacità di risolvere i problemi in modo obiettivo e con conoscenze tecniche.",
+    "subtitle5": "Grande professionista, sempre alla ricerca di apprendere, migliorare e padroneggiare nuovi argomenti. Aiuta il team a risolvere i problemi.",
+    "subtitle6": "Per me, Hudson è stato un eccellente istruttore. Mi ha insegnato a gestire una piattaforma che non è per niente nel mio campo. Professionista esemplare e di grande capacità. Ha tutto per decollare nella sua carriera come Sviluppatore.",
+    "subtitle7": "Ho lavorato con Hudson presso Vilt. Anche se è stato per un breve periodo, ho avuto l'opportunità di conoscere questa meravigliosa persona, molto animata e collaborativa. Abbiamo partecipato insieme a formazione e alcune sfide, durante questo periodo, come persona più esperta, si è dimostrato una buona guida e un eccellente motivatore per tutti quelli intorno a lui e soprattutto per i più giovani. Sempre disposto ad aiutare, sarà un grande alleato in qualsiasi team.",
+    "subtitle8": "Ho avuto l'opportunità di lavorare con Hudson. È stata un'esperienza molto interessante, poiché è un professionista molto dedicato e competente nel frontend. Una piacevole sorpresa e altamente raccomandato. Successo Hudson!",
+    "subtitle9": "Hudson è un professionista completo, sempre proattivo e disposto ad aiutare, ma durante il tempo in cui abbiamo lavorato insieme, si è davvero distinto per la sua competenza nello sviluppo frontend e la sua conoscenza dell'UX/UI, sempre molto attento ai dettagli. È diventato un punto di riferimento per me, sono sicuro che contribuirà molto al team in cui si unirà!",
+    "subtitle10": "Lavorare con Hudson è stata un'ottima esperienza. La sua comprensione del FrontEnd è evidente in ogni implementazione e supporto al team. È proattivo, creativo e cerca sempre soluzioni innovative ed eleganti.",
+    "subtitle11": "Ho avuto il piacere di avere Hudson nel mio team. Un sviluppatore focalizzato e creativo, sempre alla ricerca di soluzioni per le sfide che incontriamo nel progetto. Proattivo e disponibile ad aiutare i compagni di squadra, mirando al meglio nella consegna degli obiettivi!",
+    "subtitle12": "Un grande professionista e profondo conoscitore del front-end, non si limita all'uso dei framework per far accadere la 'magia'. Altamente raccomandato!",
+    "subtitle13": "Ho avuto il piacere di lavorare con il collega Hudson Kennedy nel team di sviluppo presso Cast, sul progetto MG-Florestas, e posso testimoniare le sue eccezionali competenze e dedizione. Hudson è uno sviluppatore frontend talentuoso e appassionato, dimostrando sempre una profonda comprensione delle tecnologie più recenti e delle migliori pratiche. Durante il nostro tempo insieme a Cast, ha svolto un ruolo fondamentale nel successo del progetto. Ciò che mi ha impressionato di più di Hudson è la sua capacità di affrontare sfide complesse con creatività ed efficienza. La sua attenzione ai dettagli e l'impegno per la consegna di prodotti di alta qualità lo hanno sempre distinto. Oltre alle sue impressionanti competenze tecniche, Hudson è stato un incredibile membro del team. La sua comunicazione chiara e la disponibilità a collaborare hanno reso l'ambiente di lavoro più produttivo e piacevole. Raccomando Hudson senza riserve e sono fiducioso che continuerà ad avere un impatto positivo ovunque andrà. Se state cercando uno sviluppatore frontend talentuoso e impegnato, Hudson Kennedy è la scelta giusta. Non esitate a contattarmi se avete bisogno di ulteriori informazioni. Cordiali saluti, Gei Batista.",
+    "subtitle14": "Hudson è stato uno dei candidati che ho avuto il piacere di conoscere. Una persona molto educata, con una storia di vita incredibile e ha condotto la nostra conversazione in modo molto rilassato, spiegando sempre con grande ricchezza di dettagli le sue esperienze. Un profilo eccellente da valutare.",
+    "subtitle15": "Hudson è un professionista perfetto, impegnato in ciò che fa, sempre completando i suoi progetti con eccellenza.",
+    "subtitle16": "Professionista esemplare! Molto dedicato, risolutivo e proattivo. E con eccellenti competenze interpersonali. Altamente raccomandato!",
+    "subtitle17": "Lavorare con Hudson è sempre un'esperienza incredibile. È il tipo di professionista che non solo raggiunge risultati, ma trasforma anche l'ambiente intorno a sé. La sua responsabilità e il suo impegno sono ammirevoli, e affronta sempre le sfide con creatività e una prospettiva innovativa, cercando sempre la soluzione migliore per ogni problema. Ma ciò che distingue davvero Hudson non è solo la sua competenza tecnica, ma il modo in cui si connette con le persone. Il suo buon umore rende ogni giornata più leggera, e la sua genuina disponibilità ad aiutare fa sentire tutti intorno a lui supportati. Si preoccupa davvero del benessere del team, creando legami che vanno oltre l'ambiente professionale. Se stai cercando uno sviluppatore talentuoso, creativo e che faccia davvero la differenza in un team, Hudson è senza dubbio la persona giusta. Qualsiasi azienda sarebbe fortunata ad averlo!",
+    "subtitle18": "Ho la soddisfazione di dire che ho già lavorato con Hudson sullo stesso progetto. Contribuisce in modo significativo a un ambiente di lavoro sano e leggero. Dal punto di vista tecnico, cerca sempre di andare oltre le basi, il che arricchisce molto il lavoro di tutto il team."
+  },
+
+  "experiences": {
+    "title": " Le mie",
+    "text": " Esperienze",
+    "subtitle1": "Freelancer/Progetti Personali",
+    "subtitle2": "Analista di E-commerce / Sviluppatore Front-end",
+    "subtitle3": "Consulente Tecnico Fullstack",
+    "subtitle4": "Ingegnere Frontend",
+    "subtitle5": "Sviluppatore Fullstack",
+    "subtitle6": "Sviluppatore Front-End",
+    "description1": "Ho seguito un corso di informatica industriale presso l’ETERJ e ho lavorato come freelancer usando AngularJs, VB.net, HTML, Javascript, Jquery, Bootstrap, Sass.",
+    "description2": "Emissione di fatture, migrazione di un sito WordPress a React con NodeJs usando Redux, Router, PropTypes, emailjs/browser, Swiper, SweetAlert, ecc... ottimizzazione e caricamento delle immagini, responsabile dell’integrazione con l’ERP Bling e i marketplace.",
+    "description3": "Consulenza Fullstack utilizzando Java/NodeJs per il backend, Angular/React per il frontend, oltre ad Adobe Experience Manager (AEM), con progetti per Porto, CVC, ecc.",
+    "description4": "Lavoro come libero professionista, ho progettato l’architettura e ottimizzato le pagine e il caricamento delle immagini usando Vue3 per il frontend, PHP e Laravel per il backend, oltre a Docker e Webpack per creare i container dell’applicazione, layout e stili con Sass/Scss, ecc...",
+    "description5": "Coinvolgimento diretto nelle direttive e nella manutenzione/refactoring del codice usando Java/Spring Boot, NodeJs/Express per il backend, PostgreSQL, e Typescript con Angular/React per il frontend.",
+    "description6": "Lavoro come libero professionista, responsabile dell’architettura del progetto, aggiornamento da Angular 14 a 15, regolazione delle dipendenze, correzione di errori di sintassi, layout e stili con Sass/Scss, ecc...",
+    "description7": "Lavoro come libero professionista, usando NestJs e il protocollo gRPC per il backend con Prisma per la modellazione del database PostgreSQL, VueJs con Quasar per il frontend, Typescript, test con Cypress, refactoring e creazione di componenti e API.",
+    "description8": "Lavoro come libero professionista, creazione e manutenzione di layout e interfacce con React, Styled-Components e Tailwind CSS, test unitari con Cypress e Jest, ottimizzazione di pagine e componenti.",
+    "description9": "Creazione del sito con Shopify, jQuery per risposte esterne e trattamenti di integrazione come ufficio postale, gateway di pagamento, bling ERP ed ecc.",
+    "date1": "Febbraio 2012 - Dicembre 2016",
+    "date2": "Febbraio 2019 - Giugno 2021",
+    "date3": "Luglio 2021 - Agosto 2021",
+    "date4": "Gennaio 2022 - Aprile 2022",
+    "date5": "Aprile 2022 - Agosto 2022",
+    "date6": "Agosto 2022 - Ottobre 2023",
+    "date7": "Novembre 2023 - Gennaio 2024",
+    "date8": "Aprile 2024 - Maggio 2025",
+    "date9": "Ottobre 2024 - ad oggi"
+  },
+
+  "skills": {
+    "title": "Le Mie",
+    "text": " Competenze",
+    "search": "Cerca...",
+    "noResults": "Nessuna competenza trovata",
+    "cloudWord": "Nuvola di parole",
+    "searchable": "Filtro e ricerca",
+    "chart": "Dashboard",
+    "expert": "Esperto",
+    "advanced": "Avanzato",
+    "intermediate": "Intermedio",
+    "basic": "Base",
+    "dashboardTitle": "Dashboard Competenze",
+    "dashboardSubtitle": "{{count}} competenze di competenza",
+    "proficiency": "Competenza",
+    "category": "Categoria",
+    "pieView": "Distribuzione delle Principali Competenze",
+    "rankingView": "Classifica Completa delle Competenze",
+    "mySkills": "Le Mie Competenze",
+    "proficiencyLevel": "Competenza",
+    "averageLevel": "Livello Medio",
+    "totalSkills": "Totale Competenze",
+    "clickToViewDetails": "Clicca per vedere i dettagli",
+    "skillsLabel": "competenze"
+  },
+
+  "projects": {
+    "title": "Principali",
+    "text": "Progetti",
+    "subtitle": "Tecnologie Utilizzate",
+    "clickToFlip": "Clicca per girare",
+    "inDevelopment": "In sviluppo",
+    "data": [
+      {
+        "description": "Sito web semplice, seguendo le linee guida del corso orientato agli oggetti su Udemy"
+      },
+      {
+        "description": "Pokedex utilizza l'API per interrogare ed elencare i Pokémon."
+      },
+      {
+        "description": "Giochi creati in React e Typescript, per praticare ed esercitarsi un po' di più nel linguaggio."
+      },
+      {
+        "description": "Un omaggio storico e una precisa ricreazione del gioco originale da sala giochi Pac-Man."
+      },
+      {
+        "description": "App creata con HTML, CSS e JavaScript, consumando l'API del tempo, per visualizzare informazioni per ogni città."
+      },
+      {
+        "description": "Orologio analogico e orologio digitale, realizzato con TypeScript e Styled-Components"
+      },
+      {
+        "description": "Un modulo di carta di credito, costruito con vuejs e completamente responsivo. "
+      },
+      {
+        "description": "Tracker delle festività del Canton svizzero"
+      },
+      {
+        "description": "Schermata di accesso animata, fatta per esercitarsi"
+      },
+      {
+        "description": "Convertitore di valuta globale, realizzato nel corso di Udemy"
+      },
+      {
+        "description": "Una piccola web app per velocizzare il sorteggio delle squadre nel calcio"
+      },
+      {
+        "description": "Sito web di un organizzatore di attività (elenco di cose da fare)"
+      },
+      {
+        "description": "Semplice calcolatore BMI per il calcolo della massa corporea"
+      },
+      {
+        "description": "Pagina di destinazione semplice, creata attraverso un test tecnico"
+      },
+      {
+        "description": "Progetto per cercare i tuoi Pokémon preferiti e scoprire la storia del mondo di queste piccole creature"
+      },
+       {
+        "description": "Sistema di sondaggi in tempo reale"
+      },
+      {
+        "description": "Un'applicazione di notizie in tempo reale utilizzando NewsAPI."
+      },
+      {
+        "description": "Un sito per un barbiere, con prenotazione online."
+      }
+    ]
+  },
+
+  "footer": {
+    "title": "Contatti"
+  },
+
+  "tour": {
+    "next": "Avanti",
+    "previous": "Indietro",
+    "done": "Fatto",
+    "close": "Chiudi tour",
+    "progress": "{{current}} di {{total}}",
+    "start": "Tour",
+    "navbar": {
+      "title": "Navigazione Principale",
+      "description": "Usa questo menu per navigare tra le diverse sezioni del mio portfolio. Ogni sezione mostra aspetti diversi della mia carriera."
+    },
+    "theme": {
+      "title": "Cambia Tema",
+      "description": "Passa tra i temi chiaro e scuro per un'esperienza visuale personalizzata."
+    },
+    "language": {
+      "title": "Selettore Lingua",
+      "description": "Scegli la tua lingua preferita. Il portfolio è disponibile in 5 lingue diverse."
+    },
+    "sound": {
+      "title": "Controllo Audio",
+      "description": "Attiva o disattiva gli effetti sonori durante la navigazione nel portfolio."
+    },
+    "particles": {
+      "title": "Effetti Particelle",
+      "description": "Attiva o disattiva gli effetti di particelle animate sullo sfondo per migliorare l'esperienza visiva."
+    },
+    "hero": {
+      "title": "Sezione Hero",
+      "description": "Questa è la mia presentazione principale. Qui troverai il mio nome e una breve descrizione di quello che faccio."
+    },
+    "typewriter": {
+      "title": "Animazione Testo",
+      "description": "Questo testo animato mostra le mie diverse aree di specializzazione nello sviluppo."
+    },
+    "resume": {
+      "title": "Pulsante CV",
+      "description": "Clicca qui per visualizzare o scaricare il mio curriculum completo in formato PDF."
+    },
+    "about": {
+      "title": "Chi Sono",
+      "description": "In questa sezione conoscerai la mia storia, esperienza e passione per lo sviluppo."
+    },
+    "skillsSearch": {
+      "title": "Ricerca Competenze",
+      "description": "Usa questa barra di ricerca per trovare competenze specifiche nel mio insieme di abilità."
+    },
+    "skillsChart": {
+      "title": "Grafico Competenze",
+      "description": "Questo grafico mostra il mio livello di competenza in diverse tecnologie e strumenti."
+    },
+    "wordCloud": {
+      "title": "Nuvola di Parole",
+      "description": "Una rappresentazione visuale delle mie principali tecnologie, dove la dimensione indica il livello di expertise."
+    },
+    "portfolioGrid": {
+      "title": "Griglia Progetti",
+      "description": "Qui ci sono i miei principali progetti. Ogni scheda mostra un progetto diverso con le sue tecnologie."
+    },
+    "portfolioCard": {
+      "title": "Scheda Progetto",
+      "description": "Clicca sulla scheda per girarla e vedere più dettagli, tecnologie usate e link del progetto."
+    },
+    "portfolioPagination": {
+      "title": "Paginazione",
+      "description": "Usa questi pulsanti per navigare tra diverse pagine di progetti."
+    },
+    "timeline": {
+      "title": "Timeline",
+      "description": "Questa timeline mostra il mio percorso professionale con tutte le esperienze e posizioni che ho ricoperto."
+    },
+    "testimonials": {
+      "title": "Testimonianze",
+      "description": "Qui troverai feedback di colleghi e clienti sul mio lavoro e performance professionale."
+    },
+    "education": {
+      "title": "Formazione Accademica",
+      "description": "Il mio percorso educativo, inclusi corsi, certificazioni e formazioni che hanno contribuito al mio sviluppo."
+    },
+    "contactForm": {
+      "title": "Modulo di Contatto",
+      "description": "Usa questo modulo per contattarmi. Tutti i campi sono obbligatori per garantire che io possa rispondere adeguatamente."
+    },
+    "footer": {
+      "title": "Social Network",
+      "description": "Contattami attraverso i miei social network e canali di comunicazione."
+    }
+  }
+}

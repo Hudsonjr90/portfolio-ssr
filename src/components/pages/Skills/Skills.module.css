@@ -1,0 +1,554 @@
+.skills {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.skills .heading {
+  animation: animate 0.8s ease-in-out 1 forwards;
+  font-size: 3.7rem;
+  margin: 12rem 0 3rem;
+  opacity: 0;
+  text-align: center;
+}
+
+@keyframes animate {
+  from {
+    filter: blur(33px);
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+
+  to {
+    filter: blur(0);
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content:space-between;
+  padding: 3rem;
+}
+
+.customSelect {
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid var(--main_color);
+  border-radius: 4px;
+  color: var(--main_color);
+  background-color: var(--bg_color);
+  margin-right: 10px;
+  appearance: none;
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  transition: border-color 0.3s ease;
+}
+
+.customSelect:focus {
+  border-color: var(--main_color);
+  outline: none;
+  box-shadow: 0 0 5px var(--main_color);
+}
+
+.searchContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.customTextField {
+  padding: 10px;
+  padding-right: 30px; 
+  font-size: 12px;
+  border: 1px solid var(--main_color);
+  border-radius: 4px;
+  color: var(--main_color);
+  background-color: var(--bg_color);
+  width: 75%;
+  transition: border-color 0.3s ease;
+}
+
+.customTextField:focus {
+  border-color: var(--main_color);
+  outline: none;
+  box-shadow: 0 0 5px var(--main_color);
+}
+
+.customTextField::placeholder {
+  color: transparent;
+}
+
+.customTextFieldLabel {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--main_color);
+  font-size: 12px;
+  pointer-events: none;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.customTextField:focus + .customTextFieldLabel,
+.customTextField:not(:placeholder-shown) + .customTextFieldLabel {
+  top: 1rem;
+  font-size: 10px;
+  color: var(--main_color);
+  background-color: var(--bg_color);
+}
+
+.searchIcon {
+  position: absolute;
+  right: 65px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--main_color);
+  font-size: 20px;
+}
+
+.customSelect {
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid var(--main_color);
+  border-radius: 4px;
+  color: var(--main_color);
+  background-color: var(--bg_color);
+  margin-right: 10px;
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  position: relative;
+  padding-right: 30px; 
+}
+
+.customSelect:focus {
+  border-color: var(--main_color);
+  outline: none;
+  box-shadow: 0 0 5px var(--main_color);
+}
+
+.selectIcon {
+  position: relative;
+  right: 40px;
+  top: 40%;
+  transform: translateY(-50%);
+  color: var(--main_color);
+  font-size: 2rem !important;
+  pointer-events: none; 
+}
+
+.icons_container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.box_icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.icon_wrapper {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  color: var(--main_color);
+}
+
+.icon_description {
+  text-align: center;
+  font-size: 1.9rem;
+  color: var(--main_color);
+}
+
+.indicator {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  margin-top: -125px;
+  margin-left: -1px;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  font-size: 1.4rem;
+  color: var(--main_color);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 2.7rem;
+  
+}
+
+.pagination li a {
+  cursor: pointer;
+  margin: 5px;
+  padding: 8px;
+  color: var(--main_color);
+  border: 1px solid var(--main_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3vw;
+  height: 3vh;
+  min-width: 40px;
+  min-height: 32px;
+  user-select: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.pagination li a:hover {
+  background-color: var(--main_color);
+  color: var(--bg_color);
+  transform: scale(1.05);
+}
+
+.pagination li a svg {
+  font-size: 12px;
+}
+
+.pagination li:first-child a,
+.pagination li:last-child a {
+  font-weight: bold;
+}
+
+.pagination li:first-child a svg,
+.pagination li:last-child a svg {
+  font-size: 14px;
+}
+
+.pagination li.activePage a {
+  background-color: var(--main_color);
+  color: var(--bg_color);
+  border: 1px solid var(--main_color);
+}
+
+
+.toggle {
+  border: none;
+  border-radius: 20px;
+}
+
+.show_cloud svg,
+.show_search svg {
+  font-size: 3rem;
+  cursor: pointer;
+  color: var(--main_color);
+}
+
+.no_results {
+  display: flex;
+  justify-content: center;
+  color: var(--main_color);
+}
+
+.toggleButtons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.viewModeButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: var(--second_bg_color);
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.viewButton {
+  transition: all 0.3s ease !important;
+  border-radius: 8px !important;
+  padding: 12px !important;
+}
+
+.viewButton svg {
+  font-size: 1.8rem !important;
+}
+
+.viewButton:hover {
+  transform: scale(1.1);
+  background-color: rgba(var(--main_color_rgb), 0.1) !important;
+}
+
+.activeView {
+  background-color: rgba(var(--main_color_rgb), 0.2) !important;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(var(--main_color_rgb), 0.3) !important;
+}
+
+.activeView svg {
+  font-size: 2.2rem !important;
+}
+
+.viewBtn {
+  background: transparent !important;
+  border: 2px solid var(--main_color) !important;
+  border-radius: 50% !important;
+  width: 60px !important;
+  height: 60px !important;
+  transition: all 0.3s ease !important;
+}
+
+.viewBtn:hover {
+  background: var(--main_color) !important;
+  color: var(--bg_color) !important;
+}
+
+.viewBtn.active {
+  background: var(--main_color) !important;
+  color: var(--bg_color) !important;
+}
+
+.viewBtn svg {
+  font-size: 1.5rem !important;
+  color: var(--main_color) !important;
+}
+
+.viewBtn.active svg,
+.viewBtn:hover svg {
+  color: var(--bg_color) !important;
+}
+
+.viewModeButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.viewButton {
+  transition: all 0.3s ease !important;
+  border-radius: 8px !important;
+}
+
+.viewButton:hover {
+  transform: scale(1.1);
+  background-color: rgba(var(--main_color_rgb), 0.1) !important;
+}
+
+.activeView {
+  background-color: rgba(var(--main_color_rgb), 0.2) !important;
+  transform: scale(1.05);
+}
+
+.chartContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chartContainer::-webkit-scrollbar-track {
+  background: var(--second_bg_color);
+  border-radius: 4px;
+}
+
+.chartContainer::-webkit-scrollbar-thumb {
+  background: var(--main_color);
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+.chartContainer::-webkit-scrollbar-thumb:hover {
+  background: var(--main_color);
+  opacity: 1;
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 1rem 0;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+.backButton {
+  background-color: rgba(var(--bg_color_rgb), 0.9) !important;
+  border: 2px solid var(--main_color) !important;
+  border-radius: 50% !important;
+  width: 50px !important;
+  height: 50px !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.backButton:hover {
+  background-color: var(--main_color) !important;
+  transform: scale(1.1);
+}
+
+.backButton:hover svg {
+  color: var(--bg_color) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .icons_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills .heading {
+    font-size: 2.9rem;
+    margin: 10rem 0 1.5rem;
+  }
+  .icons_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .filters{
+   margin-left: 3rem;
+  }
+  
+
+  .icon {
+    height: 7rem;
+    width: 7rem;
+    margin-bottom: 1rem;
+  }
+
+  .icon_description {
+    left: 40px;
+    text-align: center;
+  }
+
+  .icon_wrapper {
+    top: 45%;
+  }
+
+  .indicator {
+    margin-top: -8rem;
+    margin-left: 2px;
+    font-size: 1.3rem;
+  }
+
+  .pagination li a {
+    width: auto;
+    min-width: 32px;
+    min-height: 32px;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  .pagination li a svg {
+    font-size: 10px;
+  }
+  
+  .pagination li:first-child a svg,
+  .pagination li:last-child a svg {
+    font-size: 12px;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .selectIcon {
+    top: -2.3rem;
+    left: 11rem;
+  }
+  .searchContainer {
+    position: relative;
+    display: inline-block;
+  }
+  .customTextFieldLabel{
+    top: 20px
+  }
+  .searchIcon{
+    margin-top: -1rem;
+    margin-right: -1.2rem;
+  }
+
+    .toggleButtons {
+    gap: 0.5rem;
+  }
+  
+  .viewBtn {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .viewBtn svg {
+    font-size: 1.2rem !important;
+  }
+  
+  .chartContainer {
+    padding: 1rem;
+    max-height: 70vh;
+    min-height: 400px;
+  }
+  
+  .chartHeader {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  
+  .backButton {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  .backButton svg {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills {
+    padding: 0 1rem;
+  }
+  
+  .skills .heading {
+    font-size: 2.5rem;
+    margin: 12rem 0 1rem;
+  }
+
+  .toggleButtons {
+    margin: 3rem 0;
+    justify-content: center;
+  }
+  
+  .viewModeButtons {
+    padding: 0.3rem;
+  }
+  
+  .viewButton {
+    padding: 8px !important;
+  }
+  
+  .viewButton svg {
+    font-size: 1.5rem !important;
+  }
+  
+  .activeView svg {
+    font-size: 1.6rem !important;
+  }
+}

@@ -1,0 +1,22 @@
+node_modules
+
+# Next.js build outputs
+out/
+.next/
+
+# Development files
+.DS_Store
+*.log
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+.vscode/
+.idea/
+
+# Cache
+.eslintcache

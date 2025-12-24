@@ -1,0 +1,618 @@
+.card_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+  margin-top: 8rem;
+  padding: 0 1rem;
+}
+
+/* Container 3D para o efeito holograma - Desktop maior */
+.card_container_3d {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  transform-style: preserve-3d;
+}
+
+/* Card base que deita - agora menor, só para imagem */
+.card_base {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-origin: center bottom;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(var(--main_color_rgb), 0.2);
+  background-color: var(--second_bg_color);
+}
+
+.card_base:hover {
+  border-color: var(--main_color);
+  box-shadow: 0 8px 25px rgba(var(--main_color_rgb), 0.3);
+}
+
+.card_base .card_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  display: block;
+}
+
+.hologram {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  background: linear-gradient(
+    135deg,
+    rgba(var(--main_color_rgb), 0.1) 0%,
+    rgba(var(--main_color_rgb), 0.05) 50%,
+    rgba(var(--main_color_rgb), 0.1) 100%
+  );
+  border: 2px solid rgba(var(--main_color_rgb), 0.3);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 0 30px rgba(var(--main_color_rgb), 0.3),
+    inset 0 0 20px rgba(var(--main_color_rgb), 0.1);
+  z-index: 100;
+}
+
+
+.hologram_glow {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(var(--main_color_rgb), 0.4),
+    transparent
+  );
+  border-radius: 20px;
+  opacity: 0.6;
+  animation: hologramGlow 2s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes hologramGlow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.02); }
+}
+
+.hologram_content {
+  position: relative;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.hologram_title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--main_color);
+  margin-bottom: 0.8rem;
+  text-shadow: 
+    0 0 10px rgba(var(--main_color_rgb), 0.5),
+    0 0 20px rgba(var(--main_color_rgb), 0.3);
+  line-height: 1.2;
+}
+
+.hologram_description {
+  font-size: 0.9rem;
+  color: var(--text_color);
+  margin-bottom: 1.2rem;
+  line-height: 1.4;
+  opacity: 0.9;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hologram_button {
+  background: linear-gradient(
+    135deg,
+    rgba(var(--main_color_rgb), 0.8) 0%,
+    rgba(var(--main_color_rgb), 1) 100%
+  );
+  border: 2px solid var(--main_color);
+  color: var(--bg_color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 4px 15px rgba(var(--main_color_rgb), 0.3),
+    inset 0 1px 3px rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.hologram_button:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 20px rgba(var(--main_color_rgb), 0.4),
+    inset 0 1px 3px rgba(255, 255, 255, 0.3);
+}
+
+.hologram_button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.hologram_button:hover:before {
+  left: 100%;
+}
+
+.pagination_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  cursor: pointer;
+  margin: 5px;
+  padding: 8px;
+  color: var(--main_color);
+  border: 1px solid var(--main_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 32px;
+  user-select: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.pagination li a:hover {
+  background-color: var(--main_color);
+  color: var(--bg_color);
+  transform: scale(1.05);
+}
+
+.pagination li a svg {
+  font-size: 12px;
+}
+
+.pagination li:first-child a,
+.pagination li:last-child a {
+  font-weight: bold;
+}
+
+.pagination li:first-child a svg,
+.pagination li:last-child a svg {
+  font-size: 14px;
+}
+
+.pagination li.activePage a {
+  background-color: var(--main_color);
+  color: var(--bg_color);
+  border: 1px solid var(--main_color);
+}
+
+@media screen and (max-width: 1200px) {
+  .card_container {
+    gap: 1rem;
+    margin-top: 6rem;
+  }
+  
+  .card {
+    width: 380px;
+    height: 420px;
+  }
+
+  .card_container_3d {
+    width: 350px;
+    height: 260px;
+  }
+
+  .hologram {
+    width: 370px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card_container {
+    gap: 1.5rem;
+    margin-top: 5rem;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 340px;
+    height: 380px;
+  }
+  
+  .card_content {
+    padding: 0.8rem;
+  }
+  
+  .card_title {
+    font-size: 1.1rem;
+  }
+  
+  .card_description {
+    font-size: 0.9rem;
+  }
+
+  .card_container_3d {
+    width: 320px;
+    height: 240px;
+  }
+
+  .hologram {
+    width: 340px;
+    height: 200px;
+  }
+
+  .hologram_title {
+    font-size: 1.3rem;
+  }
+
+  .hologram_description {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+  
+  .card {
+    width: 90%;
+    max-width: 420px;
+    height: auto;
+    min-height: 380px;
+  }
+
+  .card_image_container {
+    height: 220px;
+  }
+  
+  .card_image {
+    object-fit: cover;
+  }
+
+  .card_content {
+    padding: 1rem;
+    flex: 1;
+  }
+
+  .card_title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card_description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .download_button {
+    padding: 0.8rem 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Responsivo para holograma mobile - tamanho melhor */
+  .card_wrapper {
+    perspective: 800px;
+  }
+
+  .card_container_3d {
+    width: 280px;
+    height: 210px;
+  }
+
+  .hologram {
+    width: 300px;
+    height: 170px;
+  }
+
+  .hologram_content {
+    padding: 1rem;
+  }
+
+  .hologram_title {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .hologram_description {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  .hologram_button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .pagination {
+    margin-top: 1rem;
+  }
+
+  .pagination li a {
+    width: auto;
+    min-width: 36px;
+    min-height: 36px;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .pagination li a svg {
+    font-size: 12px;
+  }
+  
+  .pagination li:first-child a svg,
+  .pagination li:last-child a svg {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card_container {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 360px;
+    min-height: 350px;
+  }
+
+  .card_image_container {
+    height: 200px;
+  }
+
+  .card_content {
+    padding: 0.8rem;
+  }
+
+  .card_title {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .card_description {
+    font-size: 0.85rem;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+  }
+
+  .download_button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .card_container_3d {
+    width: 260px;
+    height: 190px;
+  }
+
+  .hologram {
+    width: 280px;
+    height: 150px;
+  }
+
+  .hologram_content {
+    padding: 0.8rem;
+  }
+
+  .hologram_title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hologram_description {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .hologram_button {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    gap: 0.4rem;
+  }
+  
+  .pagination li a {
+    min-width: 32px;
+    min-height: 32px;
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+  
+  .pagination li a svg {
+    font-size: 10px;
+  }
+  
+  .pagination li:first-child a svg,
+  .pagination li:last-child a svg {
+    font-size: 12px;
+  }
+}
+
+.mobile_card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--second_bg_color);
+  border: 2px solid rgba(var(--main_color_rgb), 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.mobile_card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(var(--main_color_rgb), 0.3);
+  border-color: var(--main_color);
+}
+
+.mobile_card_image_container {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.mobile_card_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.mobile_card:hover .mobile_card_image {
+  transform: scale(1.05);
+}
+
+.mobile_card_content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile_card_title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--main_color);
+  margin: 0;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.mobile_card_description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text_color);
+  opacity: 0.9;
+  margin: 0;
+  text-align: center;
+}
+
+.mobile_card_button {
+  background: linear-gradient(
+    135deg,
+    var(--main_color) 0%,
+    rgba(var(--main_color_rgb), 0.8) 100%
+  );
+  border: 2px solid var(--main_color);
+  color: var(--bg_color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.mobile_card_button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(var(--main_color_rgb), 0.4);
+  background: transparent;
+  color: var(--main_color);
+}
+
+/* Responsividade específica para mobile cards */
+@media screen and (max-width: 480px) {
+  .mobile_card {
+    max-width: 350px;
+  }
+
+  .mobile_card_image_container {
+    height: 200px;
+  }
+
+  .mobile_card_content {
+    padding: 1.2rem;
+    gap: 0.8rem;
+  }
+
+  .mobile_card_title {
+    font-size: 1.2rem;
+  }
+
+  .mobile_card_description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .mobile_card_button {
+    padding: 0.8rem 1.3rem;
+    font-size: 0.9rem;
+  }
+}

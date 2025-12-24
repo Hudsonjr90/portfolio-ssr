@@ -1,0 +1,163 @@
+.home {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 95vh;
+  padding: 10rem 6% 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.home_content {
+  height: 30rem;
+}
+
+@keyframes animate {
+  from {
+    filter: blur(33px);
+    opacity: 0;
+    transform: translate(0, 120px);
+  }
+
+  to {
+    filter: blur(0);
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.home_content .transparent_text {
+  margin: 2rem -1rem 3rem;
+}
+
+.home_content .text_reveal {
+  display: grid;
+}
+
+@keyframes button_contact {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0) scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.btn_box {
+  animation: button_contact 0.8s ease-in-out 1.2s 1 forwards;
+  position: relative;
+  opacity: 0;
+  will-change: transform, opacity; /* Optimize for composition */
+}
+
+.btn_box .btn {
+  background: var(--main_color);
+  border-radius: 0.6rem;
+  box-shadow: 0 0 1rem var(--main_color);
+  border: 0.2rem solid var(--main_color);
+  color: var(--bg_color);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  position: relative;
+  padding: 1.2rem 3.2rem;
+  overflow: hidden;
+  outline: none;
+  transition: 0.5s ease;
+  z-index: 1;
+}
+
+.btn_box .btn::before {
+  background: var(--bg_color);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  width: 0;
+  z-index: -1;
+}
+
+.btn_box .btn:hover::before {
+  width: 100%;
+}
+
+.btn_box .btn:hover {
+  box-shadow: none;
+  color: var(--main_color);
+}
+
+.home_img {
+  position: fixed;
+  right: 25rem;
+}
+
+.home_img img {
+  width: 26.5vw;
+  border: 1px solid var(--main_color);
+  border-radius: 50%;
+  user-select: none;
+}
+
+/* <========== breakpoints ==========> */
+
+@media screen and (max-width: 768px) {
+  .home_img img {
+    width: 65vw;
+  }
+
+  .home_img {
+    bottom: 20rem;
+    right: 10rem;
+    z-index: -1;
+  }
+
+  .home_content {
+    height: 50vh;
+  }
+
+  .text_reveal {
+    font-size: 4rem;
+  }
+  .transparent_text {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .home_img img {
+    width: 60vw;
+  }
+
+   .home_img {
+    bottom: 10rem;
+    right: 10rem;
+    z-index: -1;
+  }
+
+  .home_content {
+    height: 60vh;
+  }
+
+  .text_reveal {
+    font-size: 4rem;
+  }
+
+  .transparent_text {
+    font-size: 2.3rem;
+    margin: 1.5rem -0.5rem 2rem;
+  }
+
+  .btn_box .btn {
+    font-size: 1.4rem;
+    padding: 1rem 2.5rem;
+  }
+}
