@@ -5,7 +5,7 @@ import styles from "./Skills.module.css";
 import { motion } from "framer-motion";
 import Transition from "@/components/Transition/Transition";
 import { mainIcons } from "@/data/iconsServer";
-import { useTranslation } from "react-i18next";
+import SafeTranslation from "@/components/SafeTranslation/SafeTranslation";
 import { FaChartBar } from "react-icons/fa";
 import { IoCloudOutline } from "react-icons/io5";
 import Tooltip from "@mui/material/Tooltip";
@@ -33,7 +33,6 @@ const categoryOptions = [
 type ViewMode = "chart" | "cloud";
 
 const Skills = () => {
-  const { t } = useTranslation();
   const { mainColor } = useTheme();
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -168,13 +167,15 @@ const Skills = () => {
   };
 
   return (
-    <Transition onAnimationComplete={() => {}}>
-      <Suspense fallback={<div>{t("home.loading")}</div>}>
-        <ParticlesB />
-      </Suspense>
-      <section className={styles.skills} data-tour="skills-section">
-        <h2 className={styles.heading}>
-          <span>//</span> {t("skills.title")}
+    <SafeTranslation>
+      {(t) => (
+        <Transition onAnimationComplete={() => {}}>
+          <Suspense fallback={<div>{t("home.loading")}</div>}>
+            <ParticlesB />
+          </Suspense>
+          <section className={styles.skills} data-tour="skills-section">
+            <h2 className={styles.heading}>
+          <span>{"/*/"}</span> {t("skills.title")}
           <span>{t("skills.text")}</span>
         </h2>
         <div className={styles.toggleButtons} data-tour="view-toggles">
@@ -263,6 +264,8 @@ const Skills = () => {
         )}
       </section>
     </Transition>
+      )}
+    </SafeTranslation>
   );
 };
 

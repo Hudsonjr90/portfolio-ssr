@@ -5,8 +5,11 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  output: 'export',
-  distDir: 'out',
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
+  // Desabilita pre-rendering estático
+  staticPageGenerationTimeout: 1000,
   assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
   typescript: {
     ignoreBuildErrors: false,

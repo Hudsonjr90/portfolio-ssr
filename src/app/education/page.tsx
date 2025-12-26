@@ -1,8 +1,10 @@
+export const dynamic = 'force-dynamic'
+
 import { Suspense } from 'react'
-import dynamic from 'next/dynamic'
+import nextDynamic from 'next/dynamic'
 import { Metadata } from 'next'
 
-const Education = dynamic(() => import('@/components/pages/Education/Education'), {
+const Education = nextDynamic(() => import('@/components/pages/Education/Education'), {
   ssr: true,
   loading: () => <div>Loading...</div>
 })

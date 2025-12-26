@@ -45,7 +45,6 @@
   appearance: none;
   -webkit-appearance: none; 
   -moz-appearance: none; 
-  background-image: url("");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 12px;
@@ -263,7 +262,7 @@
 
 .toggleButtons {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   margin: 2rem 0;
 }

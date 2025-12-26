@@ -3,7 +3,7 @@
 import styles from "./About.module.css";
 import React, { useState, useCallback, Suspense } from "react";
 import Transition from "@/components/Transition/Transition";
-import { useTranslation } from "react-i18next";
+import SafeTranslation from "@/components/SafeTranslation/SafeTranslation";
 import about from "../../../../public/imgs/about.webp";
 import { motion } from "framer-motion";
 
@@ -12,8 +12,6 @@ const ParticlesB = React.lazy(
 );
 
 const About = () => {
-  const { t } = useTranslation();
-
   const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
   const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
 
@@ -30,11 +28,13 @@ const About = () => {
   }, []);
 
   return (
-    <Transition onAnimationComplete={() => {}}>
-      <section className={styles.about} data-tour="about-section">
-        <Suspense fallback={<div>{t("home.loading")}</div>}>
-          <ParticlesB />
-        </Suspense>
+    <SafeTranslation>
+      {(t) => (
+        <Transition onAnimationComplete={() => {}}>
+          <section className={styles.about} data-tour="about-section">
+            <Suspense fallback={<div>{t("home.loading")}</div>}>
+              <ParticlesB />
+            </Suspense>
         <div className={styles.container_img} data-tour="about-image">
           <Suspense fallback={<div>{t("home.loading")}</div>}>
             <motion.div
@@ -73,7 +73,7 @@ const About = () => {
             data-tour="about-content"
           >
             <h2>
-              <span>//</span>
+              <span>{"/*/"}</span>
               {t("about.title")}
               <span>Hudson Kennedy</span>
             </h2>
@@ -94,6 +94,8 @@ const About = () => {
         </div>
       </section>
     </Transition>
+      )}
+    </SafeTranslation>
   );
 };
 

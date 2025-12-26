@@ -3,7 +3,7 @@
 import styles from "./Experiences.module.css";
 
 import Transition from "@/components/Transition/Transition";
-import { useTranslation } from "react-i18next";
+import SafeTranslation from "@/components/SafeTranslation/SafeTranslation";
 import { useState, useEffect } from "react";
 
 import {
@@ -137,7 +137,6 @@ const HorizontalTimeline = ({ experiences }: { experiences: Experience[] }) => {
 };
 
 const Experiences = () => {
-  const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -151,22 +150,25 @@ const Experiences = () => {
     return () => window.removeEventListener('resize', checkIfMobile);
   }, []);
 
-  const translatedExperiences = experiencesServer.map((experience: Experience) => ({
-    ...experience,
-    subtitle: t(experience.subtitle),
-    description: t(experience.description),
-    date: t(experience.date),
-  }));
-
   return (
-    <Transition onAnimationComplete={() => {}}>
-      <ParticlesB />
-      <section className={styles.experiences}>
-        <h2 className={styles.heading}>
-          <span>//</span>
-          {t("experiences.title")}
-          <span>{t("experiences.text")}</span>
-        </h2>
+    <SafeTranslation>
+      {(t) => {
+        const translatedExperiences = experiencesServer.map((experience: Experience) => ({
+          ...experience,
+          subtitle: t(experience.subtitle),
+          description: t(experience.description),
+          date: t(experience.date),
+        }));
+
+        return (
+          <Transition onAnimationComplete={() => {}}>
+            <ParticlesB />
+            <section className={styles.experiences}>
+              <h2 className={styles.heading}>
+                <span>{"/*/"}</span>
+                {t("experiences.title")}
+                <span>{t("experiences.text")}</span>
+              </h2>
         
         {isMobile ? (
           <VerticalTimeline>
@@ -186,6 +188,9 @@ const Experiences = () => {
         )}
       </section>
     </Transition>
+        );
+      }}
+    </SafeTranslation>
   );
 };
 

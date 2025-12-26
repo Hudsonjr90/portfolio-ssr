@@ -6,10 +6,11 @@ import esTranslation from "./locales/es.json"
 import frTranslation from "./locales/fr.json"
 import itTranslation from "./locales/it.json"
 
-
-i18n
-  .use(initReactI18next)
-  .init({
+// Only initialize if in browser environment
+if (typeof window !== 'undefined') {
+  i18n
+    .use(initReactI18next)
+    .init({
     lng: "pt", 
     fallbackLng: "pt", 
     resources: {
@@ -30,5 +31,6 @@ i18n
       }
     }
   })
+}
 
 export default i18n

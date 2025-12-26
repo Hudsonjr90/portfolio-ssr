@@ -16,8 +16,6 @@ interface ModalProps {
 }
 
 const Modal = ({ show, onClose }: ModalProps) => {
-  if (!show) return null;
-
   const { t, i18n } = useTranslation();
   const [selectedImages, setSelectedImages] = useState<string[]>([]);
   const [selectedPdf, setSelectedPdf] = useState<string | null>(null);
@@ -72,6 +70,8 @@ const Modal = ({ show, onClose }: ModalProps) => {
 
     loadContent();
   }, [i18n.language]);
+
+  if (!show) return null;
 
   return (
     <div className={styles.modal_container}>

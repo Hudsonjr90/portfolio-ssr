@@ -1,8 +1,10 @@
+export const dynamic = 'force-dynamic'
+
 import { Suspense } from 'react'
-import dynamic from 'next/dynamic'
+import nextDynamic from 'next/dynamic'
 import { Metadata } from 'next'
 
-const Home = dynamic(() => import('@/components/pages/Home/Home'), {
+const Home = nextDynamic(() => import('@/components/pages/Home/Home'), {
   ssr: true,
   loading: () => <div>Loading...</div>
 })

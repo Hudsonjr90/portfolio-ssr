@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 
@@ -14,7 +14,37 @@ export const useSEO = () => {
   const pathname = usePathname();
   const { t, i18n } = useTranslation();
 
-  const updateMetaTags = (seoData: SEOData) => {
+  const updateMetaTag = useCallback((attribute: string, name: string, content: string) => {
+    if (typeof window === 'undefined') return;
+    
+    let element = document.querySelector(`meta[${attribute}="${name}"]`) as HTMLMetaElement;
+    if (element) {
+      element.content = content;
+    } else {
+      element = document.createElement('meta');
+      element.setAttribute(attribute, name);
+      element.content = content;
+      document.head.appendChild(element);
+    }
+  }, []);
+
+  const updateLink = useCallback((rel: string, href: string) => {
+    if (typeof window === 'undefined') return;
+    
+    let element = document.querySelector(`link[rel="${rel}"]`) as HTMLLinkElement;
+    if (element) {
+      element.href = href;
+    } else {
+      element = document.createElement('link');
+      element.rel = rel;
+      element.href = href;
+      document.head.appendChild(element);
+    }
+  }, []);
+
+  const updateMetaTags = useCallback((seoData: SEOData) => {
+    if (typeof window === 'undefined') return;
+    
     // Update title
     document.title = seoData.title;
 
@@ -48,37 +78,13 @@ export const useSEO = () => {
 
     // Update language
     document.documentElement.lang = i18n.language === 'pt' ? 'pt-br' : i18n.language;
-  };
+  }, [updateMetaTag, updateLink, i18n.language]);
 
-  const updateMetaTag = (attribute: string, name: string, content: string) => {
-    let element = document.querySelector(`meta[${attribute}="${name}"]`) as HTMLMetaElement;
-    if (element) {
-      element.content = content;
-    } else {
-      element = document.createElement('meta');
-      element.setAttribute(attribute, name);
-      element.content = content;
-      document.head.appendChild(element);
-    }
-  };
-
-  const updateLink = (rel: string, href: string) => {
-    let element = document.querySelector(`link[rel="${rel}"]`) as HTMLLinkElement;
-    if (element) {
-      element.href = href;
-    } else {
-      element = document.createElement('link');
-      element.rel = rel;
-      element.href = href;
-      document.head.appendChild(element);
-    }
-  };
-
-  const getSEOData = (): SEOData => {
+  const getSEOData = useCallback((): SEOData => {
     const baseUrl = 'https://hudsonkennedy.dev.br';
-    const currentUrl = `${baseUrl}${location.pathname}`;
+    const currentUrl = `${baseUrl}${pathname}`;
 
-    switch (location.pathname) {
+    switch (pathname) {
       case '/':
         return {
           title: `${t('menu.home')} | Hudson Kennedy - Desenvolvedor Full Stack`,
@@ -159,12 +165,14 @@ export const useSEO = () => {
           url: currentUrl,
         };
     }
-  };
+  }, [pathname, t]);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     const seoData = getSEOData();
     updateMetaTags(seoData);
-  }, [location.pathname, i18n.language, t]);
+  }, [pathname, i18n.language, t, getSEOData, updateMetaTags]);
 
   return { updateMetaTags, getSEOData };
 };

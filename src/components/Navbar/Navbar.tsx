@@ -29,9 +29,7 @@ const Navbar = () => {
   const { particlesEnabled, toggleParticles } = useParticles();
   const [isLoaded, setIsLoaded] = useState(false);
   const [lightMode, setLightMode] = useState<boolean>(false);
-  const [currentLanguage, setCurrentLanguage] = useState<string>(() => {
-    return localStorage.getItem("currentLanguage") || "pt";
-  });
+  const [currentLanguage, setCurrentLanguage] = useState<string>("pt");
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const { handleClickButton, handleLinkClick, showMenu } =
@@ -40,7 +38,9 @@ const Navbar = () => {
   const handleToggleLightMode = () => {
     const newLightMode = !lightMode;
     setLightMode(newLightMode);
-    localStorage.setItem("lightMode", JSON.stringify(newLightMode));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem("lightMode", JSON.stringify(newLightMode));
+    }
     setMainColor(newLightMode ? "#f65151" : "#0ef6cc");
   };
 
@@ -53,7 +53,9 @@ const Navbar = () => {
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
     setCurrentLanguage(lng);
-    localStorage.setItem("currentLanguage", lng);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem("currentLanguage", lng);
+    }
   };
 
   const toggleSidebar = () => {
@@ -65,10 +67,16 @@ const Navbar = () => {
   }, [currentLanguage]);
 
   useEffect(() => {
-    const savedLanguage = localStorage.getItem("currentLanguage") || "pt";
-    i18n.changeLanguage(savedLanguage);
-    setCurrentLanguage(savedLanguage);
-  }, []);
+    if (typeof window !== 'undefined') {
+      const savedLanguage = localStorage.getItem("currentLanguage") || "pt";
+      const savedLightMode = localStorage.getItem("lightMode");
+      const isLightMode = savedLightMode ? JSON.parse(savedLightMode) : false;
+      
+      i18n.changeLanguage(savedLanguage);
+      setCurrentLanguage(savedLanguage);
+      setLightMode(isLightMode);
+    }
+  }, [i18n]);
 
   // Efeito de carregamento para animação sequencial
   useEffect(() => {
@@ -377,7 +385,7 @@ const Navbar = () => {
         }}
       >
         <ThemeProvider theme={navbarTheme}>
-          <TourButton currentPage={location.pathname === '/' ? 'home' : location.pathname.slice(1)} />
+          <TourButton currentPage={pathname === '/' ? 'home' : pathname.slice(1)} />
 
           <Tooltip title={t("navbar.sound")} placement="bottom" arrow>
             <button

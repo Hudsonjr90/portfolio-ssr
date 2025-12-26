@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 
@@ -84,8 +84,8 @@ export const useStructuredData = () => {
       { name: "Home", url: "https://hudsonkennedy.dev.br" }
     ];
 
-    if (location.pathname !== '/') {
-      const pathSegments = location.pathname.split('/').filter(Boolean);
+    if (pathname !== '/') {
+      const pathSegments = pathname.split('/').filter(Boolean);
       pathSegments.forEach((segment: string, index: number) => {
         const url = `https://hudsonkennedy.dev.br/${pathSegments.slice(0, index + 1).join('/')}`;
         breadcrumbs.push({
@@ -107,7 +107,9 @@ export const useStructuredData = () => {
     };
   };
 
-  const updateStructuredData = () => {
+  const updateStructuredData = useCallback(() => {
+    if (typeof window === 'undefined') return;
+    
     // Remove existing schema scripts
     const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
     existingScripts.forEach(script => script.remove());
@@ -118,7 +120,7 @@ export const useStructuredData = () => {
       getBreadcrumbSchema()
     ];
 
-    if (location.pathname === '/portfolio') {
+    if (pathname === '/portfolio') {
       schemas.push(getPortfolioSchema());
     }
 
@@ -129,11 +131,13 @@ export const useStructuredData = () => {
       script.innerHTML = JSON.stringify(schema, null, 2);
       document.head.appendChild(script);
     });
-  };
+  }, [pathname]);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     updateStructuredData();
-  }, [location.pathname, i18n.language]);
+  }, [pathname, i18n.language, updateStructuredData]);
 
   return { updateStructuredData };
 };

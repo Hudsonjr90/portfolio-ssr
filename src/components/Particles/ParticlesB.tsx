@@ -151,4 +151,6 @@ const ParticlesB = React.memo(() => {
   )
 })
 
+ParticlesB.displayName = 'ParticlesB';
+
 export default ParticlesB

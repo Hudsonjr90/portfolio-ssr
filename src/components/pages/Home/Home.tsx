@@ -149,4 +149,6 @@ const Home = React.memo(() => {
   );
 });
 
+Home.displayName = 'Home';
+
 export default Home;
