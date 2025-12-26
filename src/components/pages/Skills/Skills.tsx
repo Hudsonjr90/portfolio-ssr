@@ -243,7 +243,7 @@ const Skills = () => {
               }
               subtitle={selectedPieCategory 
                 ? `${circularChartData.length} ${t("skills.text")}`
-                : t("skills.dashboardSubtitle", { count: filteredData.length })
+                : `${t("skills.dashboardSubtitle")} ${filteredData.length}`
               }
               height={isMobile ? 400 : 500}
               onChartClick={handleChartClick}
