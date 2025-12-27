@@ -1,5 +1,5 @@
 <template>
-  <div   id="my_works" v-show="!isMobile" class="sticky_parent" ref="stickyParent">
+  <div   id="portfolio" v-show="!isMobile" class="sticky_parent" ref="stickyParent">
     <section class="sticky" ref="horizontalSection">
       <div class="scroll_section" ref="contentStrip">
 
@@ -33,7 +33,7 @@
   </div>
 
   <!-- Mobile vertical scroll -->
-  <section  id="my_works" v-show="isMobile" class="vertical-scroll-section">
+  <section  id="portfolio-mobile" v-show="isMobile" class="vertical-scroll-section">
     <div class="mobile-panel about-panel">
       <SectionDescription
           class="description"

@@ -2,19 +2,19 @@
   <div ref="container" class="container">
     <Animation />
     <SectionsFolder />
-    <SectionBase :style="'accnet_background'" type="skills">
+    <SectionBase id="skills" :style="'accnet_background'" type="skills">
       <SkillContainer />
-    </SectionBase>
-    <SectionBase :style="'dark_background'" type="faq">
-      <FaqContainer />
     </SectionBase>
     <SectionBase :style="'dark_background'" type="hard_skils">
       <HardSkillSection />
     </SectionBase>
+    <SectionBase id="faq" :style="'dark_background'" type="faq">
+      <FaqContainer />
+    </SectionBase>
     <Footer />
 
     <MenuItem />
-    
+
     <Cursor v-if="hasCursor" />
   </div>
 </template>

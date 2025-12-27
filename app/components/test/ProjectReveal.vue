@@ -29,22 +29,19 @@ function disableScroll() {
 function enableScroll() {
   document.body.style.position = '';
   document.body.style.top = '';
-  window.scrollTo(0, scrollTop); // возвращаем на место
+  window.scrollTo(0, scrollTop); 
 }
-// --- Единая функция закрытия ---
+
 async function handleClose() {
   if (!props.active || isClosing.value) return
 
   isClosing.value = true
 
-  // 1. Скрываем описание
   showDescription.value = false
 
-  // 2. Ждем полного исчезновения описания (0.4s) + пауза (1s)
   await new Promise(resolve => setTimeout(resolve, 500 ))
   enableScroll()
-  // 3. Запускаем анимацию закрытия колонок
-  if (import.meta.client) { // Проверка для Nuxt.js SSG
+  if (import.meta.client) { 
     const container = document.querySelector('.reveal_body')
     if (container) {
       const items = container.querySelectorAll('.reveal_item')
@@ -54,18 +51,14 @@ async function handleClose() {
         item.style.transitionDelay = `${(numColumns - 1 - index) * 100}ms`
         item.style.transform = 'translateY(100%)'
       })
-
-      // 4. Ждем завершения анимации колонок
       await new Promise(resolve => setTimeout(resolve, maxDelay + animationDuration))
     }
   }
 
-  // 5. Закрываем компонент
   emit('close')
   isClosing.value = false
 }
 
-// --- Логика анимации открытия ---
 function onBeforeEnter(el) {
   if (!import.meta.client) return
 
@@ -84,27 +77,22 @@ async function onEnter(el, done) {
 
   const maxDelay = (numColumns - 1) * 100
 
-  // Небольшая задержка перед стартом
   await new Promise(resolve => setTimeout(resolve, 50))
 
-  // Анимация колонок
   const items = el.querySelectorAll('.reveal_item')
   items.forEach((item, index) => {
     item.style.transitionDelay = `${index * 100}ms`
     item.style.transform = 'translateY(0%)'
   })
-  // Ждем завершения анимации колонок + пауза
   await new Promise(resolve => setTimeout(resolve, animationDuration + maxDelay ))
   disableScroll()
 
-  // Показываем описание
   showDescription.value = true
   window.addEventListener('keydown', handleKey)
 
   done()
 }
 
-// --- Обработчики событий ---
 function handleKey(e) {
   if (e.key === 'Escape') {
     handleClose()
@@ -133,7 +121,6 @@ onBeforeUnmount(() => {
       @enter="onEnter">
 
     <div v-if="active" class="reveal_body" @click="handleBackgroundClick">
-      <!-- Колонки (родительская часть) -->
       <div
           v-for="col in columns"
           :key="col.id"
@@ -143,7 +130,6 @@ onBeforeUnmount(() => {
 
       </div>
 
-      <!-- Описание проекта (дочерняя часть) -->
       <div
           class="project-description"
           :class="{ 'visible': showDescription }"

@@ -90,7 +90,7 @@ const menuButton = ref(null);
 const linkHolders = ref([]);
 const childHolder = ref(null);
 const isOpen = ref(false);
-const isFocusTrapped = ref(false); // Добавляем для управления захватом фокуса
+const isFocusTrapped = ref(false); 
 
 const elements = [
   { text: 'Main', link: '#main' },
@@ -110,7 +110,7 @@ function clickBtn() {
   } else {
     activeBtn.value = true;
     menuSection.value.style.transform = '';
-    isFocusTrapped.value = true; // Включаем захват фокуса
+    isFocusTrapped.value = true; 
   }
 }
 
@@ -118,31 +118,22 @@ function closeMenuAnimation() {
   activeBtn.value = false;
   isFocusTrapped.value = false;
 
-  // Закрываем все дочерние меню
   isOpen.value = false
-  // 1. Активируем класс closing для анимации наверх
   closing.value = true;
 
-  // 2. Ждем один rAF, чтобы браузер отрисовал состояние
   requestAnimationFrame(() => {
-    // 3. Через небольшой timeout ждем завершения анимации (например, 600ms)
     setTimeout(() => {
-      // 4. Отключаем transition и мгновенно перемещаем меню вниз
       menuSection.value.style.transition = 'none';
       menuSection.value.style.transform = 'translateY(100%)';
 
-      // 5. Убираем класс closing
       closing.value = false;
 
-      // 6. Форсируем рендер и возвращаем transition
       requestAnimationFrame(() => {
         menuSection.value.style.transition = '';
       });
-    }, 600); // длительность закрытия должна совпадать с transition в CSS
+    }, 600);
   });
 }
-
-
 
 
 function smoothScrollTo(targetY, duration = 600, easing = (t) => t) {
@@ -203,7 +194,7 @@ function handleKeydown(event) {
 }
 
 function trapFocus(e) {
-  if (!isFocusTrapped.value) return; // Пропускаем, если захват фокуса не активен
+  if (!isFocusTrapped.value) return;
 
   const focusableElements = menuSection.value.querySelectorAll(
       'button, [role="button"], [tabindex]:not([tabindex="-1"])'

@@ -67,9 +67,9 @@ const isFocusTrapped = ref(false);
 
 const elements = [
   { text: 'Início', link: '#main' },
-  { text: 'Sobre Mim', link: '#my_works' },
+  { text: 'Sobre Mim', link: '#portfolio' },
   { text: 'Habilidades', link: '#skills' },
-  { text: 'Projetos', link: '#my_works' },
+  { text: 'Projetos', link: '#portfolio' },
   { text: 'FAQ', link: '#faq' },
   { text: 'Contatos', link: '#footer' },
 ];
@@ -102,9 +102,6 @@ function closeMenuAnimation() {
   });
 }
 
-
-
-
 function smoothScrollTo(targetY, duration = 600, easing = (t) => t) {
   const startY = window.scrollY;
   const diff = targetY - startY;
@@ -120,7 +117,6 @@ function smoothScrollTo(targetY, duration = 600, easing = (t) => t) {
   requestAnimationFrame(step);
 }
 
-
 function getDynamicDuration(distance) {
   const pageHeight = document.body.scrollHeight;
   const minDuration = 500;  
@@ -130,7 +126,6 @@ function getDynamicDuration(distance) {
 
   return Math.min(Math.max(duration, minDuration), maxDuration);
 }
-
 
 function scrollToSection(link) {
   const id = link.replace('#', '');
