@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Afilio / Dynaton",
+    "role": "Desenvolvedor Full Stack Sênior",
+    "period": "2023 - Atual",
+    "description": "Desenvolvimento de sistemas complexos usando React, Vue, Node.js e banco de dados PostgreSQL. Integração com APIs externas e desenvolvimento de microsserviços.",
+    "technologies": ["React", "Vue", "Node.js", "PostgreSQL", "Docker", "NestJS"]
+  },
+  {
+    "title": "Cubo Connect",
+    "role": "Desenvolvedor Frontend",
+    "period": "2022 - 2023",
+    "description": "Desenvolvimento de interfaces modernas e responsivas para aplicações web. Foco em performance e experiência do usuário.",
+    "technologies": ["React", "TypeScript", "Styled Components", "Jest"]
+  },
+  {
+    "title": "Terapia de bolso - TDB",
+    "role": "Desenvolvedor Frontend",
+    "period": "2021 - 2022", 
+    "description": "Criação de plataforma de terapia online com funcionalidades de agendamento, chat em tempo real e sistema de pagamentos.",
+    "technologies": ["Vue", "Nuxt.js", "CSS", "JavaScript", "API Integration"]
+  },
+  {
+    "title": "Cast Group Informática S.A.",
+    "role": "Desenvolvedor Full Stack",
+    "period": "2020 - 2021",
+    "description": "Desenvolvimento de sistemas corporativos e manutenção de aplicações legacy. Trabalho com equipes ágeis e metodologias SCRUM.",
+    "technologies": ["Angular", "Java", "Spring Boot", "MySQL", "Git"]
+  },
+  {
+    "title": "Atlas Technologies",
+    "role": "Desenvolvedor Web",
+    "period": "2019 - 2020",
+    "description": "Desenvolvimento de sites institucionais e e-commerce. Foco em SEO, performance e conversão.",
+    "technologies": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"]
+  },
+  {
+    "title": "VILT Brasil Sistemas de Informação",
+    "role": "Desenvolvedor Junior",
+    "period": "2018 - 2019",
+    "description": "Início da carreira profissional. Desenvolvimento de funcionalidades para sistemas web e manutenção de código existente.",
+    "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
+  }
+]

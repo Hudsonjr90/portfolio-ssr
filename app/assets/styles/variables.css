@@ -1,0 +1,12 @@
+:root {
+  --main-color: #d52627;
+  --bg-color: #0f0f0f;
+  --text-color: #EEEEF0;
+    --text-color-black: #0f0f0f;
+    --bg-color-white: #EEEEF0;
+  --font-size: 16px;
+    --clicked-size:60px;
+
+    --about-width: max(60vw, 600px);
+    --project-width: max(40vw, 400px);
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Front-end",
+    "description": "Trabalho com desenvolvimento front-end há vários anos, construindo landing pages e aplicações web interativas. Foco na qualidade da interface, responsividade e experiência do usuário. Uso frameworks modernos como React, Vue, Angular e melhores práticas, otimizando velocidade e manutenibilidade dos projetos. Acompanho tendências e novas tecnologias para criar interfaces modernas, amigáveis e funcionais."
+  },
+  {
+    "title": "Back-end",
+    "description": "Experiência em gerenciamento de banco de dados e lógica do lado do servidor. Desenvolvo APIs RESTful, integro sistemas externos, trabalho com Node.js, NestJS, Express, e tenho conhecimento em PHP, Python, Java. Também trabalho com bancos de dados como PostgreSQL, MySQL e MongoDB, além de ferramentas como Prisma, Docker e sistemas de deploy."
+  },
+  {
+    "title": "Design & UX",
+    "description": "Desenvolvo minhas habilidades de web design, estudando tendências e trabalhos de outros designers para criar interfaces modernas e amigáveis. Para cada projeto, preparo múltiplos layouts, seleciono tipografia e paletas de cores, considero implementação, animações e elementos interativos. Uso Figma, Photoshop e Adobe XD para criar designs visualmente atraentes, funcionais e intuitivos."
+  },
+  {
+    "title": "DevOps & Tools",
+    "description": "Experiência com ferramentas de desenvolvimento como Git, GitHub, GitLab, VS Code, e ferramentas de deploy como Vercel, Netlify, Heroku. Trabalho com Docker para containerização, conhecimento básico em AWS, Jenkins para CI/CD, e ferramentas de teste como Jest, Cypress. Uso npm, yarn para gerenciamento de pacotes e Webpack, Vite para build tools."
+  }
+]

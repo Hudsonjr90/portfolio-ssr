@@ -1,0 +1,26 @@
+[
+    {
+        "title": "O que eu faço?",
+        "description": "Desenvolvo aplicações web completas, desde landing pages até sistemas complexos. Meu foco principal é no desenvolvimento frontend com React, Vue e Angular, mas também trabalho com backend usando Node.js, NestJS e bancos de dados para garantir que os sites sejam rápidos, responsivos e funcionais."
+    },
+    {
+        "title": "Quais tecnologias eu uso?",
+        "description": "Meu stack inclui React, Vue, Angular, Nuxt.js, Next.js para frontend; Node.js, NestJS, Express para backend; PostgreSQL, MySQL, MongoDB para bancos de dados; e ferramentas de design como Figma e Photoshop, seguindo uma abordagem Pixel Perfect."
+    },    
+    {
+        "title": "Posso criar sistemas complexos?",
+        "description": "Sim! Tenho experiência com sistemas de enquetes em tempo real, e-commerce, jogos interativos, APIs RESTful, websockets, integração com terceiros e very mais. Uso Docker, CI/CD e boas práticas de desenvolvimento."
+    },
+    {
+        "title": "Trabalho com design também?",
+        "description": "Sim, desenvolvo interfaces modernas e funcionais usando Figma, Photoshop e Adobe XD. Crio layouts responsivos, sistemas de cores consistentes, tipografia adequada e foco na experiência do usuário (UX/UI)."
+    },
+    {
+        "title": "Quais são meus pontos fortes?",
+        "description": "Escrevo código limpo e manutenível, implemento designs modernos e adaptativos, tenho velocidade de desenvolvimento alta e muita atenção aos detalhes. Garanto que os produtos não apenas funcionem bem, mas também tenham aparência profissional."
+    },
+    {
+        "title": "Como posso ajudar empresas?",
+        "description": "Posso rapidamente implementar um site adequado aos seus objetivos — vendas, apresentação de produtos ou automação de processos. Transformo cada projeto numa ferramenta conveniente e eficaz. Tenho experiência com e-commerce, sistemas corporativos e landing pages de alta conversão."
+    }
+]

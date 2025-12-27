@@ -1,0 +1,50 @@
+[
+    {
+        "index": 1,
+      "title": "Nuxt Vue Pokedex",
+      "short_description": "Pokémon listing app",
+      "description": "Pokedex usando API para consultar e listar Pokémons. Projeto completo com busca, filtros e informações detalhadas de cada Pokémon.",
+      "technologies": ["NuxtJs", "Tailwind", "Typescript", "API Rest"],
+      "imgLink": "/img/gif/pokedex.gif"
+    },
+    {
+        "index": 2,
+      "title": "Poll App",
+      "short_description": "Sistema de enquetes realtime",
+      "description": "Sistema completo de enquetes em tempo real com backend em NestJS, frontend em React, websockets para atualizações em tempo real e banco PostgreSQL.",
+      "technologies": ["NestJS", "Fastify", "Prisma", "TypeScript", "React", "Material-UI", "Axios", "Docker", "PostgreSQL", "Websockets"],
+      "imgLink": "/img/gif/poll.gif"
+    },
+    {
+        "index": 3,
+      "title": "Memory React Game",
+      "short_description": "Jogo da memória interativo",
+      "description": "Jogo criado com React e Typescript para exercitar um pouco mais na linguagem. Inclui níveis de dificuldade, pontuação e animações.",
+      "technologies": ["React", "Typescript", "CSS", "NodeJs", "Bootstrap"],
+      "imgLink": "/img/gif/memory.gif"
+    },
+    {
+        "index": 4,
+      "title": "Weather API",
+      "short_description": "App de previsão do tempo",
+      "description": "App criado com HTML, CSS e Javascript, consumindo a WeatherAPI, para mostrar as informações de cada cidade com previsão detalhada.",
+      "technologies": ["Javascript", "API Weather", "Html", "CSS"],
+      "imgLink": "/img/gif/clima.gif"
+    },
+  {
+    "index": 5,
+    "title": "Pacman Game",
+    "short_description": "Jogo clássico do Pac-Man",
+    "description": "Uma homenagem histórica e uma recriação precisa do jogo de fliperama original Pac-Man com gráficos e sons autênticos.",
+    "technologies": ["Javascript", "Jquery", "Python", "Html", "CSS"],
+    "imgLink": "/img/gif/pacman.gif"
+  },
+  {
+    "index": 6,
+    "title": "React Website",
+    "short_description": "Website institucional",
+    "description": "Website simples seguindo orientação a objetos, desenvolvido durante curso na Udemy com foco em boas práticas de desenvolvimento React.",
+    "technologies": ["React", "Typescript", "Styled-Components"],
+    "imgLink": "/img/gif/web.gif"
+  }
+]

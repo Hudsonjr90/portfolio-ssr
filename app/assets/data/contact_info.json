@@ -1,0 +1,24 @@
+{
+  "contact": {
+    "name": "Hudson Kennedy",
+    "title": "Desenvolvedor Full-Stack",
+    "location": "Rio de Janeiro, Brasil",
+    "email": "hudsonhugo90@gmail.com",
+    "whatsapp": {
+      "number": "+5521969609121",
+      "link": "https://api.whatsapp.com/send?phone=5521969609121"
+    },
+    "social": {
+      "github": "https://github.com/Hudsonjr90",
+      "linkedin": "https://www.linkedin.com/in/hudsonkennedyjr"
+    }
+  },
+  "menu_items": [
+    { "text": "Início", "link": "#main" },
+    { "text": "Sobre Mim", "link": "#my_works" },
+    { "text": "Habilidades", "link": "#skills" },
+    { "text": "Projetos", "link": "#my_works" },
+    { "text": "FAQ", "link": "#faq" },
+    { "text": "Contatos", "link": "#footer" }
+  ]
+}

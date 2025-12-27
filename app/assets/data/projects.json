@@ -1,0 +1,56 @@
+[
+  {
+    "projectName": "react-website",
+    "title": "React Website",
+    "description": "Website simples, seguindo orientação a objetos do Curso na Udemy",
+    "images": ["/img/gif/web.gif"],
+    "link": "https://reactwebsite-puce.vercel.app",
+    "repository": "https://github.com/Hudsonjr90/reactwebsite",
+    "technologies": ["React", "Typescript", "Styled-Components"]
+  },
+  {
+    "projectName": "nuxt-pokedex",
+    "title": "Nuxt Vue Pokedex",
+    "description": "Pokedex usando API para consultar e listar Pokemóns",
+    "images": ["/img/gif/pokedex.gif"],
+    "link": "https://nuxt-pokedex-bay.vercel.app",
+    "repository": "https://github.com/Hudsonjr90/NuxtPokedex",
+    "technologies": ["NuxtJs", "Tailwind", "Typescript", "API Rest"]
+  },
+  {
+    "projectName": "memory-game",
+    "title": "Memory React Game",
+    "description": "Jogo criado com React e Typescript para exercitar um pouco mais na linguagem.",
+    "images": ["/img/gif/memory.gif"],
+    "link": "https://reactmemorygame.vercel.app",
+    "repository": "https://github.com/Hudsonjr90/Reactmemorygame",
+    "technologies": ["React", "Typescript", "CSS", "NodeJs", "Bootstrap"]
+  },
+  {
+    "projectName": "pacman-game",
+    "title": "Pacman Game",
+    "description": "Uma homenagem histórica e uma recriação precisa do jogo de fliperama original Pac-Man.",
+    "images": ["/img/gif/pacman.gif"],
+    "link": "https://pacman-retro-game.vercel.app",
+    "repository": "https://github.com/Hudsonjr90/Pacman_RetroGame",
+    "technologies": ["Javascript", "Jquery", "Python", "Html", "CSS"]
+  },
+  {
+    "projectName": "weather-api",
+    "title": "Weather API",
+    "description": "App Criado com HTML, CSS e Javascript, consumindo a WeatherAPI, para mostrar as informações de cada cidade.",
+    "images": ["/img/gif/clima.gif"],
+    "link": "https://climatempoapi.vercel.app",
+    "repository": "https://github.com/Hudsonjr90/climatempoAPI",
+    "technologies": ["Javascript", "API Weather", "Html", "CSS"]
+  },
+  {
+    "projectName": "poll-app",
+    "title": "Poll App",
+    "description": "Sistema de enquetes realtime",
+    "images": ["/img/gif/poll.gif"],
+    "link": "https://poll-app-frontend-peach.vercel.app/",
+    "repository": "https://github.com/Hudsonjr90/PollApp-Frontend",
+    "technologies": ["NestJS", "Fastify", "Prisma", "TypeScript", "React", "Material-UI", "Axios", "Docker", "PostgreSQL", "Websockets"]
+  }
+]
