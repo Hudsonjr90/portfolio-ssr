@@ -3,7 +3,12 @@
     <canvas id="canvas" />
     <div class="text-content">
       <TextFadeEffect text="Hudson Kennedy" tag="h1" :threshold="0" :duration="1000" :delay="600" />
-      <TextFadeEffect text="Desenvolvedor Full-Stack" :threshold="0" :duration="1000" :root-margin="'0px'" :delay="800" />
+      <RotatingTitle 
+        :titles="['Arquiteto de Soluções', 'Cientista da Computação', 'Desenvolvedor Full-Stack', 'Engenheiro de Software']"
+        :interval="3500"
+        :delay="800"
+        tag="p"
+      />
     </div>
   </main>
 </template>
@@ -11,6 +16,7 @@
 <script setup>
 import { onMounted, onBeforeUnmount } from 'vue'
 import TextFadeEffect from "~/components/TextFadeEffect.vue";
+import RotatingTitle from "~/components/RotatingTitle.vue";
 
 let onScrollHandler
 
