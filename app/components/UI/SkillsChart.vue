@@ -8,7 +8,7 @@
           @click="setCategory('all')"
           class="back-btn"
         >
-          ← Voltar para Visão Geral
+          
         </button>
         <button 
           v-for="category in categories" 

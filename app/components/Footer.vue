@@ -47,20 +47,7 @@
           </li>
         </ul>
       </div>
-      <h5
-          ref="textRef"
-          class="gradient-text"
-          :style="{
-          '--x': cursorX + 'px',
-          '--y': cursorY + 'px',
-          '--hover': isHover ? 1 : 0
-        }"
-          @mousemove="handleMouseMove"
-          @mouseenter="handleEnter"
-          @mouseleave="handleLeave"
-      >
-        HK DEV
-      </h5>
+     
     </footer>
   </div>
 </template>
@@ -242,7 +229,7 @@ h5 {
 }
 
 .gradient-text::after {
-  content: "WEB-DESIGNER";
+  content: "DEVELOPER";
   position: absolute;
   inset: 0;
   background: radial-gradient(

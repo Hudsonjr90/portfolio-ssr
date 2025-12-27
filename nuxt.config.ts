@@ -1,5 +1,11 @@
 
 import projects from './app/assets/data/projects.json'
+import { quasarOptions } from './quasar-options'
+declare module '@nuxt/schema' {
+  interface NuxtConfig {
+    quasar?: typeof quasarOptions
+  }
+}
 
 export default defineNuxtConfig({
     compatibilityDate: '2025-07-15',
@@ -27,7 +33,8 @@ export default defineNuxtConfig({
     },
 
     devtools: { enabled: true },
-    modules: ['@nuxt/eslint', '@nuxt/fonts'],
+    modules: ['@nuxt/eslint', '@nuxt/fonts', 'nuxt-quasar-ui', '@pinia/nuxt', '@nuxt/image'],
+    quasar: quasarOptions,
     css: [
         '~/assets/styles/variables.css',
         '~/assets/styles/style.css'
